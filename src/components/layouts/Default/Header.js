@@ -51,13 +51,13 @@ function Header() {
         {!auth?.user && (
           <Flex justify="flex-end" justifyContent="space-around" flexGrow={1}>
             <Link href="/auth/facebook">
-              <Image src="/fb-icon.svg" size="30px"></Image>
+              <Image src="/fb-icon.svg" size="25px" />
             </Link>
             <Link href="/auth/google">
-              <Icon name="phone" />
+              <Image src="/google-icon.svg" size="25px" />
             </Link>
             <Link href="/auth/line">
-              <Icon name="phone" />
+              <Image src="/line-icon.svg" size="25px" />
             </Link>
             <Link>Sign up</Link>
           </Flex>
