@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/server/index.js",
+    "dev": "node server/index.js",
     "build": "next build",
     "start": "next start"
   },
@@ -14,20 +14,19 @@
     "@chakra-ui/core": "^0.8.0",
     "@emotion/core": "^10.0.35",
     "@emotion/styled": "^10.0.27",
+    "apos-to-lex-form": "^1.0.5",
     "axios": "^0.20.0",
     "body-parser": "^1.19.0",
-    "cookie-session": "^1.4.0",
+    "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "emotion-theming": "^10.0.27",
     "express": "^4.17.1",
-    "next": "^9.5.3",
+    "natural": "^2.1.5",
+    "next": "^9.5.2",
     "next-compose-plugins": "^2.2.0",
-    "passport": "^0.4.1",
-    "passport-facebook": "^3.0.0",
-    "passport-google-oauth20": "^2.0.0",
-    "passport-line-auth": "^0.2.8",
-    "path": "^0.12.7",
     "react": "^16.13.1",
-    "react-dom": "^16.13.1"
+    "react-dom": "^16.13.1",
+    "spelling-corrector": "^3.0.0",
+    "stopword": "^1.0.3"
   }
 }

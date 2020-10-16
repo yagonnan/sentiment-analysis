@@ -1,24 +1,20 @@
 import { ThemeProvider, CSSReset, ColorModeProvider } from "@chakra-ui/core";
 import theme from "../theme";
-import { ProvideAuth } from "hooks/useAuth";
 
-function MyApp({ Component, pageProps, user }) {
+function MyApp({ Component, pageProps }) {
   return (
     <ThemeProvider theme={theme}>
       <ColorModeProvider>
         <CSSReset />
-        <ProvideAuth user={user}>
-          <Component {...pageProps} user={user} />
-        </ProvideAuth>
+          <Component {...pageProps} />
       </ColorModeProvider>
     </ThemeProvider>
   );
 }
 
 MyApp.getInitialProps = ({ ctx }) => {
-  const { user } = ctx.req;
-  console.log(user);
-  return { user };
+  // const { user } = ctx.req;
+  return {};
 };
 
 export default MyApp;

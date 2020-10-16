@@ -1,9 +1,9 @@
-const withPlugins = require("next-compose-plugins");
+require('dotenv').config();
 
 const webpackConfig = require("./webpack.config.js");
+const envConfig = require('./configs/envs.js');
 
 const nextConfig = {
-  // TODO: Better way later since these might increase over the time.
   webpack: (config) => ({
     ...config,
     resolve: {
@@ -15,8 +15,9 @@ const nextConfig = {
       },
     },
   }),
+  env: envConfig,
   poweredByHeader: false, // remove 'X-Powered-By: Next.js'
   trailingSlash: true, // new in v9.5.x
 };
 
-module.exports = withPlugins([], nextConfig);
+module.exports = nextConfig; //withPlugins([], nextConfig);

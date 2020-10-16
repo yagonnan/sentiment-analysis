@@ -1,6 +1,4 @@
-const { join, resolve } = require("path");
-// require("dotenv").config();
-// const Dotenv = require("dotenv-webpack");
+const { join } = require("path");
 
 module.exports = {
   resolve: {
@@ -8,16 +6,9 @@ module.exports = {
 
     // __dirname refer to this folder which is "[--project-directory--]"
     alias: {
-      configs: join(__dirname, "configs"),
       utils: join(__dirname, "utils"),
       public: join(__dirname, "public"),
-      tests: join(__dirname, "tests"),
+      configs: join(__dirname, 'configs'),
     },
   },
-  // plugins: [
-  //   new Dotenv({
-  //     path: resolve(__dirname, ".env"),
-  //     // systemvars: true,
-  //   }),
-  // ],
 };
