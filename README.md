@@ -7,13 +7,16 @@ npm ci
 npm run dev
 ```
 
-Usage Technologies:
+## Usage Technologies
+```
 https://chakra-ui.com/image
 https://nextjs.org/
 https://expressjs.com/
+```
 
-
-Reference:
+## Reference
+```
 https://arxiv.org/pdf/1601.06971.pdf
 https://www.tutorialspoint.com/natural_language_processing/index.htm
 https://www.npmjs.com/package/natural#sentiment-analysis
+```
